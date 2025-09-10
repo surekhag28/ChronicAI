@@ -1,0 +1,32 @@
+[project]
+name = "chronic-ai-app"  # distribution name (can have hyphens)
+version = "0.1.0"
+description = "Healthcare agent app for summarizing medical data and providing lifestyle recommendations."
+authors = [{ name = "Surekha Gaikwad" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Add all the libraries you actually use
+dependencies = [
+  "python-dotenv",
+  "pandas>=2.2",
+  "pydantic>=2.5",
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.23",
+  "sse-starlette>=2.0",          # only if you stream; safe to keep
+  "supabase>=2.5",               # supabase-py client
+  "langchain-core>=0.3",
+  "langchain-community>=0.3",
+  "langchain-openai>=0.2",
+  "langgraph>=0.2",
+  "langchain>=0.3",
+  "sentence-transformers>=2.7.0"            
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["chronic_ai_app*", "chronic_ai_api*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

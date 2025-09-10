@@ -1,0 +1,10 @@
+__pycache__/
+.env/
+node_modules/
+dist/
+.vscode/
+.DS_Store
+src/chronic_ai_app.egg-info
+src/chronic_ai_api/__pycache__
+src/chronic_ai_app/__pycache__
+src/chronic_ai_app/*/__pycache__
