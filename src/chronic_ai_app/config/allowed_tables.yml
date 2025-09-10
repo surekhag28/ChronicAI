@@ -1,0 +1,10 @@
+allowed_tables:
+  - diets
+  - exercises
+  - alcohol
+  - smoking
+  - medications
+  - profiles
+  - mental_health
+  - water_intake
+  - medical_tests
